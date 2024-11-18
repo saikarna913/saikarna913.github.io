@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header Section -->
     <header id="header">
         <div class="container">
-            <h1>Welcome to My Portfolio</h1>
+            <h1>My Portfolio</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -24,61 +25,130 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2>Hi, I'm [Your Name]</h2>
+        <h2>Welcome to My Portfolio</h2>
         <p>Creative Developer | Designer | Innovator</p>
         <a href="#projects" class="button">Explore My Work</a>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src="your-photo.jpg" alt="Your Photo" class="profile-photo">
-            <p>I'm a passionate developer who loves building creative and interactive web applications. With a knack for design and a love for coding, I aim to bring ideas to life.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <div class="card-content">
+                        <h3>Project One</h3>
+                        <p>A description of your project goes here.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <div class="card-content">
+                        <h3>Project Two</h3>
+                        <p>A description of your project goes here.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <div class="card-content">
+                        <h3>Project Three</h3>
+                        <p>A description of your project goes here.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <a href="#" class="button">View Details</a>
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2>My Experience</h2>
+
+            <!-- Experience Item 1 -->
+            <div class="experience-item">
+                <div class="experience-content">
+                    <h3>Frontend Developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="experience-image">
+                    <img src="images/experience1.jpg" alt="Frontend Developer">
+                </div>
             </div>
-            <div class="project">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <a href="#" class="button">View Details</a>
+
+            <!-- Experience Item 2 -->
+            <div class="experience-item reverse">
+                <div class="experience-content">
+                    <h3>Backend Developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="experience-image">
+                    <img src="images/experience2.jpg" alt="Backend Developer">
+                </div>
             </div>
-            <div class="project">
-                <img src="project3.jpg" alt="Project 3">
-                <h3>Project 3</h3>
-                <a href="#" class="button">View Details</a>
+
+            <!-- Experience Item 3 -->
+            <div class="experience-item">
+                <div class="experience-content">
+                    <h3>Full Stack Developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="experience-image">
+                    <img src="images/experience3.jpg" alt="Full Stack Developer">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="button">Send Message</button>
-        </form>
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-wrapper">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Somewhere Road Suite #2894, Nashville, TN 00000-0000</p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>(000) 000-0000</p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-envelope"></i>
+                        <p>information@untitled.tld</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer id="footer">
-        <p>© 2024 [Your Name]. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-        </div>
+        <p>© 2024 My Portfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>
