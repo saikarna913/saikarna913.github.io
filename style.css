@@ -2,8 +2,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(to right, #141E30, #243B55);
+    background: linear-gradient(to bottom, #141E30, #243B55);
     color: #fff;
 }
 
@@ -13,19 +12,21 @@ body {
 }
 
 h1, h2, h3 {
-    margin: 0 0 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Header Styles */
+/* Header */
 #header {
     background: rgba(0, 0, 0, 0.8);
     padding: 1em 0;
-    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #header nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -50,15 +51,13 @@ h1, h2, h3 {
 }
 
 .hero .button {
-    display: inline-block;
-    margin-top: 20px;
     background: #fff;
     color: #0078D7;
+    border-radius: 5px;
     padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 50px;
     font-weight: bold;
-    transition: background 0.3s, color 0.3s;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .hero .button:hover {
@@ -66,88 +65,141 @@ h1, h2, h3 {
     color: #fff;
 }
 
-/* Section Styles */
-.section {
+/* Projects Section */
+.projects-section {
     padding: 4em 1em;
-    text-align: center;
 }
 
-.profile-photo {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.project-grid {
+.project-cards {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.project img {
-    width: 100%;
+.card {
+    background: #1e2b37;
     border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
     transition: transform 0.3s;
 }
 
-.project img:hover {
+.card:hover {
     transform: scale(1.05);
 }
 
-/* Contact Form */
-#contact form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-#contact form input,
-#contact form textarea {
+.card img {
     width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
+}
+
+.card-content p {
     font-size: 1em;
+    color: #ddd;
 }
 
-#contact form button {
-    background: #0078D7;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+.card-content .learn-more {
+    color: #0078D7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-#contact form button:hover {
-    background: #005BB5;
+.card-content .learn-more:hover {
+    color: #00FFAB;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 4em 1em;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4em 1em;
+    text-align: center;
+    background: #1e2b37;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
 }
 
 /* Footer */
 #footer {
-    background: #222;
-    padding: 2em 1em;
+    background: #111;
     text-align: center;
+    padding: 1em 0;
 }
 
-.social-icons {
+/* Experience Section */
+.experience-section {
+    padding: 4em 1em;
+    background: #2c3e50;
+    color: #fff;
+}
+
+.experience-item {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
     gap: 20px;
 }
 
-.social-icons a {
-    color: #fff;
+.experience-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.experience-content {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.experience-content h3 {
     font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.experience-content p {
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.experience-content .learn-more {
+    color: #00FFAB;
     text-decoration: none;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
-.social-icons a:hover {
-    color: #00FFAB;
+.experience-content .learn-more:hover {
+    color: #0078D7;
+}
+
+.experience-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
 }
