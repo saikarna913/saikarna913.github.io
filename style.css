@@ -11,43 +11,102 @@
     color: #FFFFFF; /* White text */
     overflow-x: hidden;
   }
-  
-  .hero-section {
+  /* Hero Section Styling */
+.hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh; /* Full screen height */
-    padding: 0 50px;
-    background-color: #080E21; /* Background color */
+    height: 100vh; /* Full viewport height */
+    padding: 50px;
+    background-color: #080E21; /* Dark background */
   }
   
   .hero-content {
-    max-width: 50%;
+    max-width: 50%; /* Allow content to use half the width */
   }
   
   .hero-content h1 {
-    font-size: 4rem;
+    font-size: 4rem; /* Larger headline */
     color: #E4BA72; /* Gold color */
     margin-bottom: 20px;
+    line-height: 1.2;
   }
   
   .hero-content h1 span {
-    color: #FFFFFF; /* White color */
+    color: #FFFFFF; /* White color for highlighted text */
   }
   
   .hero-content p {
-    font-size: 1.2rem;
-    color: #A4A7AD; /* Light grey color */
+    font-size: 1.2rem; /* Slightly smaller font size */
+    color: #A4A7AD; /* Light gray text */
     margin-bottom: 30px;
+    line-height: 1.6;
   }
   
- 
+  .view-projects-btn {
+    display: inline-block;
+    background-color: #E4BA72; /* Gold */
+    color: #080E21; /* Dark text */
+    padding: 15px 35px; /* Larger button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .view-projects-btn:hover {
+    background-color: #5A4832; /* Darker gold */
+    color: #FFFFFF; /* White */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+  }
+  
+  .hero-resume {
+    max-width: 50%; /* Allow the resume/iframe to use half the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Rounded corners for consistency */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for pop-out effect */
+    overflow: hidden; /* Ensures iframe content doesn’t spill out */
+    background-color: #0F1624; /* Slightly darker background */
+    padding: 10px;
+  }
+  
+  .hero-resume iframe {
+    width: 100%; /* Full width */
+    height: 500px; /* Fixed height for iframe */
+    border: none; /* No border for cleaner appearance */
+  }
+  
+  .resume-link {
+    display: inline-block;
+    background-color: #080E21; /* Dark background */
+    color: #E4BA72; /* Gold text */
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold;
+    border: 2px solid #E4BA72; /* Gold border */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .resume-link:hover {
+    background-color: #E4BA72; /* Gold background */
+    color: #080E21; /* Dark text */
+    border-color: #5A4832; /* Darker gold */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+  }
+  
   .hero-image img {
     max-width: 100%;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
   }
   
- 
+  
   /* Header Styles */
 .site-header {
     background-color: #080E21; /* Dark background */
@@ -267,6 +326,18 @@ body {
     color: #a4a7ad; /* Light gray text */
     max-width: 600px;
     margin: 0 auto;
+  }
+  
+
+  .view-projects-btn {
+    background-color: #E4BA72; /* Gold button */
+    color: #080E21; /* Dark text for contrast */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
   }
   
   .projects-container {
