@@ -16,8 +16,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    padding: 50px;
+    height: 90vh; /* Full viewport height */
+    padding: 50px 50px 0 50px; 
     background-color: #080E21; /* Dark background */
   }
   
@@ -297,38 +297,38 @@ body {
     color: #FFFFFF; /* White text */
   }
   
-  .about-me-section {
-    height: 100vh; /* Occupy full desktop height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+ 
+/* About Me Section */
+.about-me-section {
+    padding: 50px; /* Reduce padding to minimize space */
+    margin: 0; /* Remove default margins */
+    background-color: #0F1624; /* Slightly darker background */
     text-align: center;
-    background-color: #080E21; /* Dark background */
-    padding: 0 50px;
   }
   
-  .about-header i {
-    font-size: 2rem;
-    color: #e4ba72; /* Gold icon color */
-    margin-bottom: 20px;
+  .about-header {
+    margin: 0 auto;
+    max-width: 800px; /* Constrain width for better readability */
   }
   
   .about-header h1 {
     font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #ffffff; /* White heading */
+    color: #E4BA72; /* Gold */
+    margin-bottom: 20px;
   }
   
   .about-header p {
     font-size: 1.2rem;
-    color: #a4a7ad; /* Light gray text */
-    max-width: 600px;
-    margin: 0 auto;
+    color: #A4A7AD; /* Light gray text */
+    margin-bottom: 20px;
+    line-height: 1.6;
   }
   
-
+  /* Reduce Space Between Sections */
+  section {
+    margin: 0;
+    padding: 0;
+  }
   .view-projects-btn {
     background-color: #E4BA72; /* Gold button */
     color: #080E21; /* Dark text for contrast */
@@ -339,51 +339,94 @@ body {
     display: inline-block;
     transition: all 0.3s ease;
   }
-  
-  .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  .projects-scroll {
+    display: flex;
+    overflow-x: auto; /* Horizontal scrolling */
     gap: 20px;
     padding: 50px;
-    width: 100%;
+    scroll-snap-type: x mandatory; /* Smooth snapping */
+  }
+  
+  .projects-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .projects-scroll::-webkit-scrollbar-thumb {
+    background-color: #5A4832; /* Custom scrollbar color */
+    border-radius: 10px;
+  }
+  
+  .projects-scroll::-webkit-scrollbar-track {
+    background-color: #0F1624; /* Background for scrollbar track */
   }
   
   .project-item {
+    flex: 0 0 33%; /* Each project takes 33% of the container width */
+    height: 600px; /* Increased height for better visibility */
     background-color: #0f1624; /* Slightly darker background */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    scroll-snap-align: start; /* Snap to the start of each project */
+    position: relative; /* For arrow positioning */
   }
   
-  .project-item img {
+  .project-item .image-container {
+    width: 100%;
+    height: 70%; /* Adjusted height to balance content */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers smaller images */
+    background-color: #1c2433; /* Placeholder background */
+    border-radius: 10px; /* Match container radius */
+    overflow: hidden; /* Prevent overflow for larger images */
+  }
+  
+  .project-item .image-container img {
     max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    max-height: 100%;
+    object-fit: contain; /* Maintain aspect ratio */
   }
   
   .project-item h3 {
     color: #e4ba72; /* Gold color */
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Adjusted font size */
+    margin: 15px 0 10px;
   }
   
   .project-item p {
     color: #a4a7ad; /* Light gray text */
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 1rem; /* Adjusted font size */
+    margin-bottom: 20px;
+  }
+  
+  .github-link {
+    display: inline-block;
+    color: #e4ba72; /* Gold color for arrow */
+    font-size: 1.5rem; /* Adjusted arrow size */
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px; /* Place at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the link horizontally */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .github-link:hover {
+    transform: translateX(-50%) scale(1.2); /* Slight scaling on hover */
+    color: #5A4832; /* Darker gold on hover */
   }
   
   @media (max-width: 768px) {
-    .about-header h1 {
-      font-size: 2.5rem;
-    }
-  
-    .about-header p {
-      font-size: 1rem;
+    .project-item {
+      flex: 0 0 80%; /* For smaller screens, display one project at a time */
+      height: auto; /* Allow height to adjust */
     }
   }
   
+  
+
   /* Contact Section */
 .contact-section {
     background-color: #080E21; /* Dark background */
