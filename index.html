@@ -1,154 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header id="header">
-        <div class="container">
-            <h1>My Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <header class="site-header">
+        <nav class="navbar">
+          <div class="logo">
+            <span>&#40;&#40; &#8226; &#41;&#41; Portfect</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h1>My <span>Portfolio:</span></h1>
+      <p>Welcome to my online portfolio, where I showcase a diverse range of projects, experiences, and skills. Explore my work and discover my passion for design, development, and innovation.</p>
+      <a href="#projects" id="view-projects-btn" class="view-projects-btn">View Projects</a>
+    </div>
+    <div class="hero-image">
+      <img src="your-image.jpg" alt="Beautiful Landscape">
+    </div>
+  </section>
+
+  <section id="about-me" class="about-me-section">
+    <div class="container">
+      <div class="about-header">
+        <i class="icon-phone"></i>
+        <h1>About Me</h1>
+        <p>
+          As a multifaceted designer and developer, I'm dedicated to creating
+          unique and captivating digital experiences.
+        </p>
+      </div>
+    </div>
+  
+    <div class="projects-container">
+      <!-- Add your projects here -->
+      <div class="project-item">
+        <img src="project1.jpg" alt="Project 1" />
+        <h3>Project Title</h3>
+        <p>A short description of the project.</p>
+      </div>
+      <div class="project-item">
+        <img src="project2.jpg" alt="Project 2" />
+        <h3>Project Title</h3>
+        <p>A short description of the project.</p>
+      </div>
+      <div class="project-item">
+        <img src="project3.jpg" alt="Project 3" />
+        <h3>Project Title</h3>
+        <p>A short description of the project.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="skills-expertise" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <p class="section-subtitle">My skillset encompasses a wide range of disciplines, from front-end development to visual design.</p>
+  
+      <div class="skills-content">
+        <!-- Left Column -->
+        <div class="resume">
+          <div class="resume-header">
+            <h3>Portre Trino</h3>
+            <p>Résumé</p>
+          </div>
+          <p>
+            Throughout my career, I have demonstrated a passion for blending creativity with functionality.
+            I believe in user-centered design and aim to create impactful experiences for all users.
+          </p>
+          <div class="resume-footer">
+            <p>Proficiencies:</p>
+            <ul>
+              <li>Front-End</li>
+              <li>Design</li>
+              <li>Development</li>
+            </ul>
+          </div>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Creative Developer | Designer | Innovator</p>
-        <a href="#projects" class="button">Explore My Work</a>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section projects-section">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-cards">
-                <div class="card">
-                    <img src="images/project1.jpg" alt="Project 1">
-                    <div class="card-content">
-                        <h3>Project One</h3>
-                        <p>A description of your project goes here.</p>
-                        <a href="#" class="learn-more">Learn More</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/project2.jpg" alt="Project 2">
-                    <div class="card-content">
-                        <h3>Project Two</h3>
-                        <p>A description of your project goes here.</p>
-                        <a href="#" class="learn-more">Learn More</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/project3.jpg" alt="Project 3">
-                    <div class="card-content">
-                        <h3>Project Three</h3>
-                        <p>A description of your project goes here.</p>
-                        <a href="#" class="learn-more">Learn More</a>
-                    </div>
-                </div>
-            </div>
+  
+        <!-- Right Column -->
+        <div class="awards">
+          <div class="awards-header">
+            <h3>Awards &</h3>
+          </div>
+          <p>
+            Throughout my career, I've been honored with various awards and accolades that celebrate my
+            contributions to the industry. These achievements are a testament to my commitment to excellence
+            and innovation.
+          </p>
+          <a href="#explore" class="btn-explore">Explore</a>
         </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section experience-section">
-        <div class="container">
-            <h2>My Experience</h2>
-
-            <!-- Experience Item 1 -->
-            <div class="experience-item">
-                <div class="experience-content">
-                    <h3>Frontend Developer</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna.</p>
-                    <a href="#" class="learn-more">Learn More</a>
-                </div>
-                <div class="experience-image">
-                    <img src="images/experience1.jpg" alt="Frontend Developer">
-                </div>
-            </div>
-
-            <!-- Experience Item 2 -->
-            <div class="experience-item reverse">
-                <div class="experience-content">
-                    <h3>Backend Developer</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna.</p>
-                    <a href="#" class="learn-more">Learn More</a>
-                </div>
-                <div class="experience-image">
-                    <img src="images/experience2.jpg" alt="Backend Developer">
-                </div>
-            </div>
-
-            <!-- Experience Item 3 -->
-            <div class="experience-item">
-                <div class="experience-content">
-                    <h3>Full Stack Developer</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna.</p>
-                    <a href="#" class="learn-more">Learn More</a>
-                </div>
-                <div class="experience-image">
-                    <img src="images/experience3.jpg" alt="Full Stack Developer">
-                </div>
-            </div>
+      </div>
+  
+      <!-- Testimonials Section -->
+      <div class="testimonials">
+        <div class="testimonial-text">
+          <h3>Testimonials</h3>
+          <p>Hear what others have to say about my work and the positive impact I've had on their projects. Testimonials from satisfied clients and collaborators showcase my dedication to delivering exceptional results.</p>
+          <a href="#view-more" class="btn-view-more">View More</a>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-wrapper">
-                <form>
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="button">Send Message</button>
-                </form>
-                <div class="contact-info">
-                    <div class="info">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>123 Somewhere Road Suite #2894, Nashville, TN 00000-0000</p>
-                    </div>
-                    <div class="info">
-                        <i class="fas fa-phone-alt"></i>
-                        <p>(000) 000-0000</p>
-                    </div>
-                    <div class="info">
-                        <i class="fas fa-envelope"></i>
-                        <p>information@untitled.tld</p>
-                    </div>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
+        <div class="testimonial-image">
+          <img src="your-image.jpg" alt="Silhouette of person" />
         </div>
-    </section>
+      </div>
+    </div>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+          <!-- Left Column: Circular Image -->
+          <div class="contact-image">
+            <img src="city-view.jpg" alt="City View" />
+          </div>
+      
+          <!-- Right Column: Contact Details -->
+          <div class="contact-details">
+            <div class="icon-logo">
+              <img src="logo-icon.png" alt="Logo Icon" />
+            </div>
+            <h2>Contact</h2>
+            <p>
+              I'm always excited to connect with new enthusiasts. Feel free to reach out.
+            </p>
+            <a href="#get-in-touch" class="btn-contact">Get in Touch</a>
+      
+            <!-- Social Media Links -->
+            <div class="social-links">
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn" />
+              </a>
+              <a href="mailto:your-email@example.com" target="_blank">
+                <img src="email-icon.png" alt="Email" />
+              </a>
+              <a href="https://github.com/" target="_blank">
+                <img src="github-icon.png" alt="GitHub" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+  
 
-    <!-- Footer -->
-    <footer id="footer">
-        <p>© 2024 My Portfolio. All rights reserved.</p>
-    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
