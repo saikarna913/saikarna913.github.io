@@ -1,0 +1,23 @@
+/* Background Styles */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  color: #333;
+}
+
+/* Code Box Styling */
+code {
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 6px;
+  display: block;
+  white-space: pre-wrap;
+}
+
+/* Smooth transitions for theme */
+.MuiSwitch-root {
+  transition: all 0.3s ease;
+}
