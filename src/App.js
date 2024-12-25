@@ -52,7 +52,7 @@ function App() {
             <Toolbar sx={{ justifyContent: "space-between" }}>
               {/* Navigation Links */}
               <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-                Karna Pardheev
+                Karna Pardheev Sai
               </Typography>
               <Box>
                 <Link component={RouterLink} to="/" sx={{ margin: "0 16px", textDecoration: "none", color: "inherit" }}>
@@ -117,56 +117,171 @@ function App() {
                     <Typography variant="h6" gutterBottom sx={{ fontFamily: "'Fira Code', monospace" }}>
                       👋 Hi there!
                     </Typography>
-                    <Typography variant="body1" sx={{ lineHeight: "1.6", color: "text.secondary", marginBottom: "16px" }}>
-                      I am <strong>Karna Pardheev</strong>, an AI and Open Source enthusiast with a background in Computer Science Engineering. I specialize in building scalable applications, contributing to open-source projects, and crafting intelligent AI solutions.
-                    </Typography>
+                    <Typography
+                    variant="body1"
+                    sx={{ lineHeight: "1.6", color: "text.secondary", marginBottom: "16px" }}
+                  >
+                    I am <strong>Karna Pardheev Sai</strong>,
+                  </Typography>
 
+                  <Box
+  sx={{
+    backgroundColor: darkMode ? "#1e1e1e" : "#f5f5f5",
+    padding: "16px",
+    borderRadius: "6px",
+    fontFamily: "'Fira Code', monospace",
+    fontSize: "0.9rem",
+    color: darkMode ? "#f5f5f5" : "#333333",
+    overflowX: "auto",
+    width: "100%",
+    whiteSpace: "pre", // This ensures the text respects newlines and spacing
+  }}
+>
+  {`const karna_Pardheev_Sai = {
+  <strong>profession: "Software Developer",
+  skills: ["C++", "Python", "Machine Learning", "HTML", "CSS"],
+  hobbies: ["Coding", "Exploring new tech", "Swimming"],
+  about: "A passionate software developer with a strong foundation in problem-solving, data structures, and algorithms. 
+  I enjoy contributing to open-source projects, building innovative solutions, and constantly exploring new technologies."
+};`}
+</Box>
+
+
+                  <Box sx={{ marginTop: "32px", width: "100%" }}>
+                    <Typography
+                      variant="h6"
+                      sx={{ fontWeight: "bold", marginBottom: "16px" }}
+                    >
+                      About Me
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      sx={{ lineHeight: "1.6", color: "text.secondary", marginBottom: "16px" }}
+                    >
+                      I am Karna Pardheev Sai, a highly motivated software developer and open-source contributor. I specialize in C++, Python, and Machine Learning, with hands-on experience in developing applications and exploring cutting-edge technologies. My passion lies in solving challenging problems, contributing to impactful projects, and continuously improving my skills.
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      sx={{ lineHeight: "1.6", color: "text.secondary", marginBottom: "16px" }}
+                    >
+                      I am skilled in designing efficient solutions using modern programming paradigms, and I have experience working on both front-end and back-end technologies like HTML and CSS. Beyond programming, I enjoy swimming and learning about emerging trends in technology.
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      sx={{ lineHeight: "1.6", color: "text.secondary", marginBottom: "16px" }}
+                    >
+                      My goal is to contribute to the tech community by building solutions that solve real-world problems and empower others through knowledge sharing. I strongly believe in continuous learning and always strive to explore, experiment, and expand my skillset.
+                    </Typography>
+                  </Box>
+
+
+                  </Box>
+                  <Box sx={{ marginTop: "32px", width: "100%" }}>
+  {/* Section Title */}
+  <Typography
+    variant="h6"
+    sx={{
+      fontWeight: "bold",
+      marginBottom: "16px",
+      textAlign: "center",
+      color: darkMode ? "#ffffff" : "#333333",
+    }}
+  >
+    LeetCode Stats
+  </Typography>
+
+  {/* LeetCode Stats Box */}
+  <Box
+    sx={{
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      backgroundColor: darkMode ? "#1E1E1E" : "#F5F5F5",
+      padding: "24px",
+      borderRadius: "12px",
+      boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)",
+    }}
+  >
+    {/* Left Side: Stats Details */}
+    <Box sx={{ marginRight: "24px", textAlign: "left" }}>
+      <Typography
+        variant="body1"
+        sx={{
+          fontSize: "18px",
+          fontWeight: "bold",
+          color: darkMode ? "#ffffff" : "#333333",
+          marginBottom: "12px",
+        }}
+      >
+        🏆 Questions Solved:
+        <strong style={{ marginLeft: "8px", color: "#4CAF50" }}>450</strong>
+      </Typography>
+      <Typography
+        variant="body1"
+        sx={{
+          fontSize: "18px",
+          fontWeight: "bold",
+          color: darkMode ? "#ffffff" : "#333333",
+        }}
+      >
+        📊 Rank:
+        <strong style={{ marginLeft: "8px", color: "#2196F3" }}>
+          Top 500
+        </strong>
+      </Typography>
+    </Box>
+
+    {/* Right Side: LeetCode Badge */}
+    <Box>
+      <img
+        src="https://leetcard.jacoblin.cool/saikarna?theme=dark"
+        alt="LeetCode Stats"
+        style={{
+          width: "220px",
+          borderRadius: "12px",
+          border: `2px solid ${darkMode ? "#4CAF50" : "#2196F3"}`,
+        }}
+      />
+    </Box>
+  </Box>
+</Box>
+
+
+
+                  <Box sx={{ marginTop: "32px", width: "100%" }}>
+                    <Typography
+                      variant="h6"
+                      sx={{ fontWeight: "bold", marginBottom: "16px" }}
+                    >
+                      GitHub Contributions
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      sx={{ lineHeight: "1.6", color: "text.secondary", marginBottom: "16px" }}
+                    >
+                      Here's my GitHub contribution calendar:
+                    </Typography>
                     <Box
                       sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
                         backgroundColor: darkMode ? "#1e1e1e" : "#f5f5f5",
                         padding: "16px",
                         borderRadius: "6px",
-                        fontFamily: "'Fira Code', monospace",
-                        fontSize: "0.9rem",
-                        color: darkMode ? "#f5f5f5" : "#333333",
                         overflowX: "auto",
-                        width: '100%',
+                        width: "100%",
                       }}
                     >
-                      {`About me:
-const karna_Pardheev_Sai = {
-  profession: "Software Developer & Open Source Contributor",
-  skills: ["C++", "Python", "Machine Learning", "HTML","CSS"],
-  hobbies: ["Coding", "Exploring new tech", "Swimming"],
-};`}
-                    </Box>
-
-                    <Box sx={{ marginTop: "32px", width: '100%' }}>
-                      <Typography variant="h6" sx={{ fontWeight: "bold", marginBottom: "16px" }}>
-                        Professional Contributions
-                      </Typography>
-                      <Typography variant="body1" sx={{ lineHeight: "1.6", color: "text.secondary", marginBottom: "16px" }}>
-                        Check out some of my professional contributions and open-source projects on GitHub:
-                      </Typography>
-                      <Grid container spacing={2}>
-                        <Grid item xs={12}>
-                          <Link href="https://github.com/saikarna913/my-project" target="_blank" sx={{ textDecoration: "none" }}>
-                            <Typography variant="body1" sx={{ color: darkMode ? "#64b5f6" : "#1e88e5" }}>
-                              My Project - A description of what this project is about.
-                            </Typography>
-                          </Link>
-                        </Grid>
-                        <Grid item xs={12}>
-                          <Link href="https://github.com/saikarna913/another-project" target="_blank" sx={{ textDecoration: "none" }}>
-                            <Typography variant="body1" sx={{ color: darkMode ? "#64b5f6" : "#1e88e5" }}>
-                              Another Project - A description of what this project is about.
-                            </Typography>
-                          </Link>
-                        </Grid>
-                        {/* Add more project links as needed */}
-                      </Grid>
+                      <img
+                        src="https://ghchart.rshah.org/saikarna913"
+                        alt="Karna Pardheev Sai's GitHub Contribution Chart"
+                        style={{ maxWidth: "100%", height: "auto" }}
+                      />
                     </Box>
                   </Box>
+
                 </>
               } />
               <Route path="/iitgn" element={<IITGNPage />} />

@@ -5,11 +5,11 @@ export default function Resume() {
     <div style={{ textAlign: "center", padding: "20px" }}>
       <h2>My Resume</h2>
       <iframe
-        src="/resume.pdf"
+        src="/Resume.pdf"
         title="Resume"
-        width="80%"
-        height="600px"
-        style={{ border: "none" }}
+        width="100%"
+        height="800px"
+        style={{ border: "none", borderRadius: "8px" }}
       ></iframe>
     </div>
   );
