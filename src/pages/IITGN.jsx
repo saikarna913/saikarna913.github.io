@@ -8,7 +8,7 @@ const IITGN = () => (
       IITGN
     </Typography>
     <Typography variant="body1" sx={{ lineHeight: "1.8" }}>
-      Information about IIT Gandhinagar.
+      Inter IIT
     </Typography>
   </Box>
 );

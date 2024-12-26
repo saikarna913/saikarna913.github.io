@@ -11,6 +11,7 @@ import "./App.css";
 import IITGNPage from './pages/IITGN'; 
 import BlogsPage from './pages/Blogs'; 
 import ResumePage from './pages/Resume';
+import Sports from './pages/Sports';
 
 const lightTheme = createTheme({
   palette: {
@@ -60,6 +61,9 @@ function App() {
                 </Link>
                 <Link component={RouterLink} to="/iitgn" sx={{ margin: "0 16px", textDecoration: "none", color: "inherit" }}>
                   IITGN
+                </Link>
+                <Link component={RouterLink} to="/Sports" sx={{ margin: "0 16px", textDecoration: "none", color: "inherit" }}>
+                  Sports
                 </Link>
                 <Link component={RouterLink} to="/blogs" sx={{ margin: "0 16px", textDecoration: "none", color: "inherit" }}>
                   Blogs
@@ -285,6 +289,7 @@ function App() {
                 </>
               } />
               <Route path="/iitgn" element={<IITGNPage />} />
+              <Route path="/Sports" element={<Sports />} />
               <Route path="/blogs" element={<BlogsPage />} />
               <Route path="/resume" element={<ResumePage />} />
             </Routes>
